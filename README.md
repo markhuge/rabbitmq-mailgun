@@ -6,7 +6,7 @@ This is a quick tool I built to offload password reset/invite/whatever emails to
 
 ### Diagram
 
-[figure 1]: https://github.com/markhuge/rabbitmq-mailgun/raw/master/docs/fig1.png "Workflow Diagram"
+![figure 1](https://raw.github.com/markhuge/rabbitmq-mailgun/master/docs/fig1.png)
 
 ### Environmental Variables
 
