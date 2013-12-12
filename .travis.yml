@@ -1,0 +1,22 @@
+before_script:
+  - rabbitmqadmin declare queue name=testqueue
+  - "rabbitmqadmin publish exchange=amq.default routing_key=testqueue payload=\"{subject: 'ci test subject', body: 'ci test body' }\""
+
+cache:
+  directories:
+    - node_modules
+
+language: node_js
+
+node_js:
+  - "0.10"
+  - "0.8"
+
+
+services:
+  - rabbitmq
+
+env:
+ - RMG_AMQP_SERVER = 'amqp://'
+ - RMG_AMQP_QUEUE  = 'testqueue'
+ - RMG_MK_KEY      = '123'
