@@ -1,0 +1,31 @@
+{
+  "name": "rabbit-mailgun",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Mark Wilkerson <mark@segfawlt.net>",
+  "description": "Quick tool to pull email msgs from rabbitMQ and send using mailgun api",
+  "scripts": {
+    "start": "node lib/rabbit-mailgun.js",
+    "test": "mocha"
+  },
+  "main": "lib/rabbit-mailgun.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markhuge/rabbitmq-mailgun.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markhuge/rabbitmq-mailgun/issues"
+  },
+  "engines": {
+    "node": "~0.10.x"
+  },
+  "dependencies": {
+    "mailgun": "~0.4.2",
+    "rabbit.js": "~0.3.1",
+    "underscore": "~1.5.2"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "mocha": "~1.15.1"
+  }
+}
