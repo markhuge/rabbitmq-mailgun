@@ -74,9 +74,9 @@ Set reasonable defaults...
 
         _.defaults options,
           sender    : if process.env.RMG_SENDER then process.env.RMG_SENDER else config.sender
-          recipient : if process.env.RMG_RECIPIENT then process.env.RMG_RECIPIENT else config.sender
-          subject   : if process.env.RMG_SUBJECT then process.env.RMG_SUBJECT else config.sender
-          body      : if process.env.RMG_BODY then process.env.RMG_BODY else config.sender
+          recipient : if process.env.RMG_RECIPIENT then process.env.RMG_RECIPIENT else config.recipient
+          subject   : if process.env.RMG_SUBJECT then process.env.RMG_SUBJECT else config.subject
+          body      : if process.env.RMG_BODY then process.env.RMG_BODY else config.body
           
 
         {sender,recipient,subject, body} = options
