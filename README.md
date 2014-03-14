@@ -1,3 +1,6 @@
+# NOTE - Literate coffeescript is one of the worst ideas ever. I have no idea why I ever did this. It is unmaintainable garbage. Leaving this here as a testament to poor decisions. 
+
+
 rabbitmq-mailgun
 ===
 
